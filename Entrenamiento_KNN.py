@@ -1,4 +1,3 @@
-
 import numpy as np
 import cv2
 import xlrd
@@ -39,7 +38,7 @@ if __name__ == '__main__':
     t0 = time()
     
     # Cargar datos desde un archivo .xlsx
-    # la función retornará el número de muestras obtenidas y su respectiva clase
+    # la funciÃ³n retornarÃ¡ el nÃºmero de muestras obtenidas y su respectiva clase
     X, Y = load_xlsx(book_excel)
 
 ##    robust_scaler = RobustScaler()
@@ -72,4 +71,3 @@ if __name__ == '__main__':
     print("done in %0.16fs" % (time() - t0))
 
     joblib.dump(knn, 'Modelos_Predict/knn.pkl')
->>>>>>> 6cb309b4c935f92010efca1750ed4a897e647b72
