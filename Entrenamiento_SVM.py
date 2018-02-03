@@ -73,4 +73,3 @@ if __name__ == '__main__':
     print "Matriz de confusion: \n",confusion_matrix(responses_test, response_pred)
 
     joblib.dump(svm, 'Modelos_Predict/svm.pkl')
-    
